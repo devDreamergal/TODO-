@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family:'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, nav, main, footer {
+            margin: 20px;
+        }
+
+        nav a {
+            margin-right: 30px;
+            text-decoration:wavy;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .menu {
+            list-style:armenian;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Website!</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website. Explore the different sections below.</p>
+            <p>
+                <a href="#gallery">
+                    <img src="https://photos.app.goo.gl/z8WAdqxMW1ViLLgo9" alt="Technology Image">
+                </a>
+            </p>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <a href="https://photos.app.goo.gl/jtYiCQQaMVeWaQKo7"><img src="nature.jpg" alt="Nature Image></a>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Menu</h2>
+            <ul class="menu">
+                <li><a href="https://photos.app.goo.gl/vQE5DDP35bFRe7c47"</li><img src="food.jpg" alt="Food Image"> Food Item 2</a></li>
+            
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
